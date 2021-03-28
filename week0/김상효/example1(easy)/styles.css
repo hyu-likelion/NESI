@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.ab-position {
+  position: absolute;
+}
+.namecard {
+  background-color: #ffffff;
+  width: 900px;
+  height: 500px;
+  border: 1px solid black;
+}
+.circle {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  left: 112.5px;
+  top: 100px;
+  background: no-repeat center/100% url(../image/sanghyo.jpg);
+}
+.text-box {
+  text-align: left;
+  width: 442px;
+  top: 150px;
+  left: 450px;
+}
+
+.name-text {
+  font-size: 25px;
+  color: #b31c1c;
+}
+.sub-text {
+  font-size: 13px;
+  color: #b31c1c;
+}
+.line {
+  border: 2px solid #b31c1c;
+  width: 897px;
+  top: 425px;
+}
+.github {
+  left: 46px;
+  top: 455px;
+}
+.insta {
+  left: 450px;
+  top: 455px;
+}
+.social-text {
+  font-size: 13px;
+  color: #b31c1c;
+  left: 36px;
+  top: 9px;
+}
