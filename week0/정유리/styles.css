@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+.background{
+    background-color:white;
+    width: 900px;
+    height: 500px;
+    border: solid;
+}
+.top{
+    display: flex;
+    height:80%;
+}
+.A{
+    display: flex;
+    width: 40%;
+}
+.img{
+    width: 300px;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+.cont{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name{
+    font: 800 55px Arial, Helvetica, sans-serif;
+}
+.info{
+    font: 300 30px Arial, Helvetica, sans-serif;
+    color: gray;
+    margin-top: 10px;
+}
+.link{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    border-top: 5px solid orangered;
+}
+.B{
+    margin-left: 30px;
+    font-size: 25px;
+}
+a, a.link, a.visited{
+    text-decoration: none;
+    color: black;
+}
