@@ -25,6 +25,7 @@ body{
     width: 200px;
 }
 .container{
+    border-right: 2px solid #f7f7f7;
     justify-content: space-between;
     font-family:'Nanum Gothic';
     display:flex;
@@ -33,6 +34,7 @@ body{
     flex: 40%
 }
 .container2{
+    margin-left:20px;
     display:flex;
     font-size: 25px;
     font-weight: 600;
@@ -41,7 +43,7 @@ body{
     align-items: flex-start;
     flex-direction: column;
     padding:20px;
-    flex:50%  
+    flex:50% 
 }
 .link{
     width: 50px;
