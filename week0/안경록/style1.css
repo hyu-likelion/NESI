@@ -14,9 +14,11 @@
   .name{
       color :#212529;
       font-weight: 900;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
   .text{
       color :#212529;
       font-size: 1.3rem;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
