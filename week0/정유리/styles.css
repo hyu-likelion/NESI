@@ -5,7 +5,7 @@ body{
     background-color:white;
     width: 900px;
     height: 500px;
-    border: solid;
+    border: solid orange;
 }
 .top{
     display: flex;
@@ -14,12 +14,15 @@ body{
 .A{
     display: flex;
     width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .img{
-    width: 300px;
-    position: absolute;
-    top: 60px;
-    left: 40px;
+    height: 500px;
+    position: relative;
+    top: 10.3%;
+    left: -30%;
 }
 .cont{
     width: 60%;
@@ -32,14 +35,16 @@ body{
 }
 .info{
     font: 300 30px Arial, Helvetica, sans-serif;
-    color: gray;
+    color: orange;
     margin-top: 10px;
 }
 .link{
     height: 20%;
+    margin-left: 95px;
     display: flex;
     align-items: center;
-    border-top: 5px solid orangered;
+    justify-content: center;
+    background-color: orange;
 }
 .B{
     margin-left: 30px;
@@ -47,5 +52,5 @@ body{
 }
 a, a.link, a.visited{
     text-decoration: none;
-    color: black;
+    color: white;
 }
