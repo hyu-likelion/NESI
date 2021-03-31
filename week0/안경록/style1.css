@@ -1,0 +1,22 @@
+  .mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .subContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .flexBox {
+    display: flex;
+    align-items: center;
+  }
+  .name{
+      color :#212529;
+      font-weight: 900;
+  }
+
+  .text{
+      color :#212529;
+      font-size: 1.3rem;
+  }
