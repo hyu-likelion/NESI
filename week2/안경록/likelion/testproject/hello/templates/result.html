@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="text-align:center">
+        <h2>
+            Total
+        </h2>
+        <div>
+            {{fulltext}}
+        </div>
+        <h3>Text Count : {{count}}</h3>
+        <div>
+            {% for word, totalCount in wordDict  %}
+                {{ word }} : {{ totalCount }}
+            <br>
+            {% endfor %}
+        </div>
+             <a href="javascript:history.back();" id="to_main"> go back</a>
+    </div>
+
+</body>
+</html>

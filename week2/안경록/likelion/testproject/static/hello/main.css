@@ -1,0 +1,48 @@
+ #container {
+        width: 500px;
+        margin: 18% auto;
+    }
+
+    #title {
+        text-align: center;
+        font-size: 4em;
+        font-weight: bold;
+        color: #ff9514;
+        font-family: 'Caveat', cursive;
+    }
+
+    #form_cover {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #form_title {
+        font-size: 1.5em;
+        color: #525252;
+        font-family: 'Noto Sans KR', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    input {
+        font-size: 1em;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #525252;
+        text-align: center;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    #submit {
+        float: right;
+        margin-top: 10px;
+        background-color: #ff9514;
+        color: white;
+        font-family: 'Noto Sans KR', sans-serif;
+        border: none;
+        cursor: pointer;
+    }

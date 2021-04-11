@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static '/calculator/calculator.css' %}" />
+    <title>Calculator</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<body>
+<div id="container">
+    <div id="title">Hello Django!</div>
+    <div id="result_cover">
+        <div id="result_title"> Result</div>
+        <div id="result"> {{ result }} </div>
+    </div>
+    <a href="javascript:history.back();" id="to_main">go back</a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static '/calculator/main.css' %}" />
+    <title>Title</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<body>
+<div id="container">
+    <div id="title">Hello Django!</div>
+    <form action="/calculator" style="display : flex; align-items:center; justify-content : center;">
+            <input type="text" name="eq">
+            <br>
+            <br>
+            <input type="submit" value="submit">
+    </form>
+     <a href="javascript:history.back();" id="to_main"> go back</a>
+</div>
+
+</body>
+</html>

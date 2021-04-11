@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" href="{% static '/hello/welcome.css' %}">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <style type="text/css">
+a { text-decoration:none }
+</style>
+</head>
+<body>
+    <div
+            class="mainContainer"
+            style="background-color: white; width: 100vw; height: 100vh"
+
+    >
+        <div
+                class="subContainer"
+                style="
+          background:rgb(95,137,250);
+          max-width: 1280px;
+          min-width: 320px;
+          width: 70vw;
+          height: calc(70vw * 0.5625);
+          max-height: calc(1280px * 0525);
+          min-height: calc(320px * 0.5625);
+          overflow: scroll;
+          border-radius : 15px;
+        "
+        >
+            <a href="namecard"
+                  class="mainBox"
+                style="
+                    background:rgb(10,70,76);
+                        "
+            >
+
+                   <h1>Name Card</h1>
+            </a>
+            <a href="/home"
+                  class="mainBox"
+                style="
+
+                        "
+            >
+
+                   <h1>Word Count</h1>
+            </a>
+            <a href="/main"
+                  class="mainBox"
+                style="
+                       background:rgb(100,150,10);
+                        "
+            >
+                   <h1>Calculator</h1>
+
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
