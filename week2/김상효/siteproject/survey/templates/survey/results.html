@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>김상효 질문</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="container">
+            <h2>설문조사 결과보기</h2>
+            <h3>응답</h3>
+            {%for answer in answers%}
+                <p>{{answer.answer}}</p>
+            {%endfor%}
+            <a href="/">홈으로 돌아가기</a>
+        </div>
+    </body>
+</html>

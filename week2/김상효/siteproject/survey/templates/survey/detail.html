@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>김상효 질문</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="container">
+            <form action="{%url 'detail' question.survey_idx%}" method="POST">
+                {%csrf_token%}
+                <h3>{{question.title}}</h3>
+                <p><input type="radio" name="num" value={{question.answer1}}>{{question.answer1}}</p>
+                <p><input type="radio" name="num" value={{question.answer2}}>{{question.answer2}}</p>
+                <p><input type="radio" name="num" value={{question.answer3}}>{{question.answer3}}</p>
+                <p><input type="radio" name="num" value={{question.answer4}}>{{question.answer4}}</p>
+                <p>
+                    <input type="submit" value="제출">
+                    <input type="button" value="결과 확인하기" value={{question.survey_idx}} onclick="show_result()">
+                    <input type="hidden" name="survey_idx">
+                </p>
+            </form>
+            <script>
+                function show_result(){
+                    location.href= "/results/{{question.survey_idx}} ";
+                }
+            </script>
+        </div>
+    </body>
+</html>
