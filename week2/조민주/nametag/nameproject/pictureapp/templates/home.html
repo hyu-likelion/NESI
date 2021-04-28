@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="kr">
+    <head>
+        <meta charset="utf-8">
+        <title>조민주의 명함</title>
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Gothic&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Open+Sans&display=swap" rel="stylesheet">      
+    </head>
+    <body>
+        <div class="whole">
+            <div class="container">
+                <div class="koname">조민주</div>
+                <div class="engname">cho min joo</div>  
+                <img src="{%static '나야나.png' %}" width=90%>
+            </div>
+            <div class="container2">
+                <div class="name">
+                    <p>Hanyang Uni / LikeLion</p>
+                    <p>Tech Stack: No</p>
+                    <p>Contact: 010-2358-4474</p>
+                </div>
+                <div class="link" >
+                    <a href="https://github.com"><img src="{%static 'github-sign.png' %}" width="50px"></a>
+                    <a href="https://www.instagram.com/mini__joo/"><img src="{%static 'instagram.png' %}" width="50px"></a>
+                    <a href="https://www.facebook.com"><img src="{%static 'facebook.png' %}" width="50px"></a>
+                </div>
+            </div>  
+        </div>
+    </body>
+</html>
