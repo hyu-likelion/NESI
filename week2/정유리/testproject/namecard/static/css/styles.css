@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+a, a.link, a.visited{
+    text-decoration: none;
+    color: white;
+}
+.background{
+    background-color:white;
+    width: 900px;
+    height: 500px;
+    border: solid orange;
+}
+.top{
+    display: flex;
+    height:80%;
+}
+.A{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    height: 500px;
+    position: relative;
+    top: 10.3%;
+    left: -30%;
+}
+.cont{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info{
+    font: 300 30px Arial, Helvetica, sans-serif;
+    color: orange;
+    margin-top: 10px;
+}
+.bottom{
+    height: 20%;
+    margin-left: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+}
+.B{
+    margin-left: 30px;
+    font-size: 25px;
+}
