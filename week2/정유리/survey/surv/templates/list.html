@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>list</title>
+    </head>
+    <style>
+        #wrap
+        {
+            width : 500px;
+            margin: auto;
+        }
+    </style>
+    <body>
+        <div id="wrap">
+            <form action="save_surv" method="post">
+                {% csrf_token %}
+                <p>{{test.question}}</p>
+                <p><input type="radio" name="num" value={{test.ans1}}>{{test.ans1}}</p>
+                <p><input type="radio" name="num" value={{test.ans2}}>{{test.ans2}}</p>
+                <p><input type="radio" name="num" value={{test.ans3}}>{{test.ans3}}</p>
+
+                <p>
+                    <input type="hidden" name="s_idx" value="{{test.surv_idx}}">
+                    <input type="submit" value="투표">
+                    <input type="button" value="결과확인" onclick="show_result()">
+                </p>
+            </form>
+            <script>
+                function show_result()
+                {
+                    location.href="result/{{test.surv_idx}}";
+                }
+            </script>
+            
+        </div>
+    </body>
+</html>

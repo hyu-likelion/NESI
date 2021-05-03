@@ -1,0 +1,13 @@
+- 1byte = 8bits(bit :binary digit)
+- 그냥 %d로 출력하면 hexdecimal, octal 상관없이 decimal로 출력됨
+- %x : hexdecimal, %o: octal 로 출력 / X를 대문자로 바꾸면 출력값도 대문자로 나옴
+- int에서 가장 왼쪽 bit는 부호를 나타냄(1이면 -)
+- 음의 정수 representaion: 절대값이 같은 양의 정수의 bit를 전부 flip한 후 1을 더함
+ ex) +5 : 00000101 -> flip : 11111010 -> +1 : 11111011 = -5
+- python에서는 ASCII코드 대신 Unicode 사용함, implicit type casting도 안 함(?)
+- print 할 때 %이용해서 형 변환 안 됨
+- double 소수점 아래 6자리가 default
+- %g는 %f랑 %e를 비교해 짧은 쪽을 출력(%f에서 뒤에 0들은 지워짐?)
+- %- : 좌측 정렬, %+ : 우측 정렬
+- scanf()로 double input 받을 때 %lf 써야 함
+- 

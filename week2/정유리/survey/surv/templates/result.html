@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>list</title>
+    </head>
+    <style>
+        #wrap
+        {
+            width : 500px;
+            margin: auto;
+        }
+    </style>
+    <body>
+        <div id="wrap">
+            <h1>설문조사 결과보기</h1>
+            <div>응답</div>
+            {% for one in result%}
+                {{one.ans}}
+            {% endfor %}
+            <a href="/">설문으로 돌아가기</a>
+        </div>
+    </body>
+</html>
