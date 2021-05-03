@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #wrap {
+        width: 550px;
+        margin: auto;
+    }
+</style>
+<body>
+<div id="wrap">
+    <h1>"록"입니다.</h1>
+    <div id = "list">
+        <div style="font-weight: bold;">응답</div>
+        <br/>
+        {% for one in result %}
+        {% if one.ans == '록' %}
+            <div style="color:blue;">{{ one.ans }}</div>
+        {% else %}
+             <div style="color:red;">{{ one.ans }}</div>
+        {% endif %}
+        {% endfor %}
+        <br/>
+    </div>
+    <a href="/"> 설문으로 돌아가기 </a>
+</div>
+
+</body>
+</html>
