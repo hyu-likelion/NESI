@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>listofpoll</title>
+</head>
+
+<body>
+    <form method="post" action="save_survey">
+    <h1>{{survey.question}}</h1>
+    <div>
+        <p><input type="button" name="num" value="{{survey.ans1}}">{{survey.ans1}}</p>
+        <p><input type="button" name="num" value="{{survey.ans2}}">{{survey.ans2}}</p>
+        <p><input type="button" name="num" value="{{survey.ans3}}">{{survey.ans3}}</p>
+        <p><input type="button" name="num" value="{{survey.ans4}}">{{survey.ans4}}</p>
+    </div>
+    <div>
+        <div><input type="hidden" name="survey_idx" value="{{survey.survey_idx}}"></div>
+        <div><input type="submit" value="제출"></div>
+        <div><input type="button" value="결과확인" onclick="show_result()"></div>
+    </div>
+    </form> 
+    <script>
+        function show_result(){
+            location.href= " show_result/{{survey.survey_idx}} ";}
+    </script>
+</body>
