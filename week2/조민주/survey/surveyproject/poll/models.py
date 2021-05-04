@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Survey(models.Model):
 
-    survey_idx = models.CharField(max_length=10, primary_key=True)
+    survey_idx = models.AutoField(primary_key=True)
 
     question = models.TextField(null=True)
 
@@ -16,7 +16,7 @@ class Survey(models.Model):
 
 class Answer(models.Model):
 
-    answer_idx = models.CharField(max_length=10, primary_key=True)
+    answer_idx = models.AutoField(primary_key=True)
 
     #????@?!!??!
     survey_idx = models.IntegerField()
