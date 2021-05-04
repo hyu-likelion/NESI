@@ -19,7 +19,7 @@ from travelapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home,name="home"),
-    path('save_result',views.save_result,name="save_result"),
-    path('show_result/<int:question_id>',views.show_result,name="show_result"),
+    path('', views.home, name="home"),
+    path('save_result', views.save_result, name="save"),
+    path('show_result/<int:question_id>',views.show_result,name="result"),
 ]
