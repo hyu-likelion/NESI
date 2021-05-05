@@ -28,13 +28,13 @@
 
 
 __3) API설계 규칙__  
->(1)리소스 형태 : GET /members/1  
-    -리소스(members)는 대문자보다는 소문자, 동사보단 명사  
+(1)리소스 형태 : GET /members/1  
+    >-리소스(members)는 대문자보다는 소문자, 동사보단 명사  
     -도큐먼트:단수 / 컬렉션:복수 / 스토어:복수  
     -CRUD 기능은URL에 포함 X  
     -경로중 변하는 부분은 유일한 값(id)로 대체  
->(2)설계 규칙 : http://restapi.example.com/houses/apartments  
-    -/는 계층관계  
+(2)설계 규칙 : http://restapi.example.com/houses/apartments  
+    >-/는 계층관계  
     -마지막 문자로 슬래시 포함 x  
     -(_)는 URL에 사용 x  
     -소문자가 적합  
