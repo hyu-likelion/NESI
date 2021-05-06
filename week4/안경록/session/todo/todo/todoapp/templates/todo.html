@@ -10,6 +10,7 @@
         <p>
         {%for one in td %}
             {{one.content}}
+            <a href="{% url 'edit' one.id %}">수정하기</a>
             <a href="{% url 'delete' one.id %}">삭제</a>
         <br>
         {% endfor %}

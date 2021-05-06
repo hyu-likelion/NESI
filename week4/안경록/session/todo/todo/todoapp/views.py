@@ -27,15 +27,10 @@ def create(request):
         return render(request,'todo.html',{'td':form})
 
 def update(request,id):
-    post = get_object_or_404(Todo,pk=id)
-    if request.method == 'POST':
-        form = TodoForm(request.POST)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.save()
-            return redirect('home')
-        else:
-            return redirect('home')
+    post = get_object_or_404(Todo,id=id)
+    post.content = request.POST['content']
+    post.save()
+    return redirect('home')
 
 
 def delete(request,id):
@@ -43,3 +38,7 @@ def delete(request,id):
     if id == form.id:
         form.delete()
         return redirect('home')
+
+def edit(request,id):
+    a=Todo.objects.get(id=id)
+    return render(request,'edit.html',{'con':a})
