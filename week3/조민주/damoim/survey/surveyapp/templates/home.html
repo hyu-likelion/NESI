@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>welcome</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(215, 215, 255);
+    }
+    .title{
+        font-size: 70px;
+        text-emphasis-color: blue;
+    }
+    button{
+        background-color: rgb(102, 16, 45);
+        font-size: 100px;
+        padding:30px;
+        border-radius: 5px;
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="title"><h2>welcome to damoim</h2></div>
+        <br>
+            <div>
+                <input type="button" value="회원가입" name="button" onclick="create_name()">
+            </div>
+            <script>
+                function create_name(){
+                    location.href= "name/";}
+            </script>
+    </div>
+</body>

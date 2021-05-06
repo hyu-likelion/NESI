@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <meta charset='UTF-8'>
+    <title>결과</title>
+</head>
+<style>
+
+</style>
+<body>
+    <div>
+        <h2>결과</h2>
+        <h3>가입자 리스트:
+            {% for one in results %}
+                <p>{{one.name}}</p>
+            {% endfor %} 
+        </h3>           
+        <a href="{% url 'name' %}">돌아가기</a>
+    </div>
