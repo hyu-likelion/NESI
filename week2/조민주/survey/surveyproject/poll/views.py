@@ -18,6 +18,6 @@ def save_survey(request):
 
 
 @csrf_protect
-def show_result(request, question_id):
-    answer = Answer.objects.filter(survey_idx=question_id)
+def show_result(request):
+    answer = Answer.objects.all()
     return render(request, "result.html",{'answer':answer})
