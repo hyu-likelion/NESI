@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>오늘 내가 할 일</title>
+        <style>
+            .container{
+                width: 70%;
+                margin:0 auto;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
+           
+            
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>오늘의 할 일</h2>
+            <form action="{%url 'edit' todo.id%}" method="post">
+                {%csrf_token%}
+                <input type="text" name="content" value="{{todo.content}}">
+                <br><br>
+                <input type="submit" value="추가하기">
+            </form>
+        </div>
+    </body>
+</html>

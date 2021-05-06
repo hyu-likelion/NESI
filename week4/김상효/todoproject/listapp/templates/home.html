@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>오늘 내가 할 일</title>
+        <style>
+        a,
+        a.link,
+        a.visited {
+        text-decoration: none;
+        color: black;
+        }
+        .container{
+            width: 70%;
+            margin:0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+       
+        
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>오늘의 할 일</h2>
+            <div class="list">
+                {%for do in todo_list%}
+                    <span>💜</span>
+                    {{do.content}}
+                    <a href="{%url 'edit' do.id%}">🔍</a>
+                    <a href="{%url 'delete' do.id%}">❌</a>
+                    <br>
+                {%endfor%}
+                <form action="{%url 'new'%}" method="post">
+                    {%csrf_token%}
+                    {{form.as_p}}
+                    <input type="submit" value="추가하기">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
