@@ -13,6 +13,7 @@ def create_name(request):
 def save_name(request):
     if request.method == "POST":
         form = NameForm(request.POST)
+        print(form)
         if form.is_valid():
             form = form.save()   
             return redirect('result')
