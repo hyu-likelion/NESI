@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TO DO</title>
+        <style>
+            body{text-align: center;}
+    
+        </style>
+    </head>
+    <body>
+        <h1>TO DO List</h1>
+        <p>
+            {%for td in todo%}
+                {{td.title}}
+                <a href="{%url 'edit' td.id%}">edit</a>
+                <a href="{%url 'delete' td.id%}">delete</a>
+                <br>
+            {%endfor%}
+        </p>
+        <form method="post" action="{%url 'create'%}">
+        {%csrf_token%}
+        <p>{{form.as_p}}<button type="submit"> submit </button></p>
+        </form>
+    </body>
+
+</html>
