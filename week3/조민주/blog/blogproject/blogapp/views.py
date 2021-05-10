@@ -29,7 +29,7 @@ def edit(request,id):
 
 def update(request,id):
     update_blog=Blog.objects.get(id = id)
-    update_blog = request.POST['title']
+    update_blog.title = request.POST['title']
     update_blog.writer = request.POST['writer']
     update_blog.body = request.POST['body']
     update_blog.pub_date = timezone.now()
